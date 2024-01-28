@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group = 'io.github.asolntsev'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation("org.testng:testng:7.9.0")
+    testRuntimeOnly("org.slf4j:slf4j-simple:2.0.11")
+}
+
+test {
+    useTestNG()
+}
